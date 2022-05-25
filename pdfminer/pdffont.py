@@ -563,7 +563,10 @@ class PDFFont:
         return False
 
     def decode(self, bytes):
-        return bytearray(bytes)  # map(ord, bytes)
+        try:
+            return bytearray(bytes)  # map(ord, bytes)
+        except:
+            return bytearray("0".encode("utf8"))
 
     def get_ascent(self):
         """Ascent above the baseline, in text space units"""

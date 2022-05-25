@@ -107,7 +107,9 @@ class PDFTextDevice(PDFDevice):
         font = textstate.font
         fontsize = textstate.fontsize
         scaling = textstate.scaling * 0.01
-        charspace = textstate.charspace * scaling
+        charspace = 0
+        if isinstance(textstate.charspace, (float, int)):
+            charspace = textstate.charspace * scaling
         wordspace = textstate.wordspace * scaling
         rise = textstate.rise
         assert font is not None
