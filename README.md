@@ -5,7 +5,12 @@ pdfminer.six
 [![PyPI version](https://img.shields.io/pypi/v/pdfminer.six.svg)](https://pypi.python.org/pypi/pdfminer.six/)
 [![gitter](https://badges.gitter.im/pdfminer-six/Lobby.svg)](https://gitter.im/pdfminer-six/Lobby?utm_source=badge&utm_medium)
 
-*We fathom PDF*
+Sobre esse Fork
+---------------
+Esse repositório é um fork do repositório oficial do [pdfminer.six](https://github.com/pdfminer/pdfminer.six), além disso, foram inseridas alterações feitas por [wind-chh/pdfminer.six](https://github.com/wind-chh/pdfminer.six). Dentre essas alterações está o suporte a mais três tipos de fonte CID e a correção da decodificação de carcarteres desconhecidos.
+
+We fathom PDF
+-------------
 
 Pdfminer.six is a community maintained fork of the original PDFMiner. It is a tool for extracting information from PDF
 documents. It focuses on getting and analyzing text data. Pdfminer.six extracts the text from a page directly from the
